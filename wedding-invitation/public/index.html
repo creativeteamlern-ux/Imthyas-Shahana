@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#343b16">
+  <meta name="description" content="An invitation to celebrate the wedding of James and Claire. Discover our story, celebration details, and RSVP.">
+  <title>James & Claire — A day, a lifetime</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/fonts.css"><link rel="stylesheet" href="style.css">
+  <script src="config.js" defer></script><script src="app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="header">
+  <a class="monogram" href="#home" aria-label="Back to invitation">J<span>&</span>C</a>
+  <nav class="desktop-nav" aria-label="Main navigation"><a href="#story">Our story</a><a href="#celebration">The celebration</a><a href="#gallery">Memories</a></nav>
+  <a class="nav-rsvp" href="#rsvp">Kindly RSVP <span aria-hidden="true">↗</span></a>
+  <button class="menu-toggle" aria-haspopup="dialog" aria-label="Open navigation">Menu <span aria-hidden="true">☰</span></button>
+</header>
+<dialog class="menu-dialog" aria-label="Navigation"><button class="menu-close" aria-label="Close navigation">Close ×</button><nav aria-label="Mobile navigation"><a href="#home">The invitation</a><a href="#story">Our story</a><a href="#celebration">The celebration</a><a href="#gallery">Memories</a><a href="#rsvp">Kindly RSVP</a></nav><p data-names>James & Claire</p></dialog>
+<main id="main">
+<section class="hero section" id="home" aria-labelledby="hero-title">
+  <div class="hero-copy">
+    <img class="botanical" src="assets/botanical.webp" width="249" height="78" alt="">
+    <p class="eyebrow">Together with our families</p>
+    <h1 id="hero-title">SAVE <em>the</em> DATE</h1>
+    <p class="script names" data-names>James & Claire</p>
+    <div class="date-line"><span></span><p data-date>May 21, 2027</p><span></span></div>
+    <p class="location" data-location>Santa Barbara, California</p>
+    <a class="button" href="#rsvp">Celebrate with us <span aria-hidden="true">↗</span></a>
+    <p class="hero-note">A day to remember. A love for a lifetime.</p>
+  </div>
+  <div class="hero-visual">
+    <p class="invited script">You're invited</p>
+    <div class="hero-photo"><img src="assets/couple.webp" alt="The couple sharing a quiet moment in a garden" width="139" height="215" fetchpriority="high"><video id="hero-video" muted loop playsinline preload="none" hidden aria-label="Wedding film"></video></div>
+    <button id="video-toggle" class="video-toggle" hidden>Pause film</button>
+    <p class="photo-caption">THE BEGINNING OF ALWAYS</p>
+  </div>
+  <a class="scroll-cue" href="#countdown">A little closer to forever <span aria-hidden="true">↓</span></a>
+</section>
+<section class="countdown-section section" id="countdown" aria-labelledby="countdown-title">
+ <p class="eyebrow" id="countdown-title">Counting the moments until we say “I do”</p>
+ <div class="countdown" role="timer" aria-label="Time until our wedding"><div><strong id="days">—</strong><span>Days</span></div><i>:</i><div><strong id="hours">—</strong><span>Hours</span></div><i>:</i><div><strong id="minutes">—</strong><span>Minutes</span></div><i>:</i><div><strong id="seconds">—</strong><span>Seconds</span></div></div>
+ <p id="countdown-message" hidden></p><button class="text-link" id="calendar">Add to calendar <span aria-hidden="true">↗</span></button>
+</section>
+<section class="story section" id="story" aria-labelledby="story-title">
+ <div class="story-photo reveal"><img src="assets/story.webp" loading="lazy" width="138" height="250" alt="Bride and groom together beneath a flowing veil"><span class="image-note script">My favourite place is with you.</span></div>
+ <div class="story-copy reveal"><p class="eyebrow">01 / Our story</p><h2 id="story-title">A LITTLE CHANCE.<br>A LIFETIME OF <em>love.</em></h2><div class="small-rule"></div><p>Some moments change everything. A conversation that lasts a little longer. A laugh that feels like home. A person who makes the ordinary feel extraordinary.</p><p>Now, our favourite chapter begins. With full hearts, we invite you to be part of the day we promise each other all our tomorrows.</p><p class="script signature" data-names>James & Claire</p></div>
+</section>
+<section class="celebration section" id="celebration" aria-labelledby="celebration-title">
+ <div class="section-heading reveal"><p class="eyebrow">02 / The celebration</p><h2 id="celebration-title">ONE BEAUTIFUL DAY.<br><em>All our favourite people.</em></h2><p data-date>May 21, 2027</p></div>
+ <div class="celebration-grid">
+  <div class="venue-card reveal"><p class="eyebrow">The venue</p><h3 class="script" data-venue>Golden Oak Gardens</h3><p class="venue-address" data-address>1284 Valley Crest Road, Santa Barbara, CA 93108</p><div class="venue-photo"><img src="assets/venue.webp" loading="lazy" width="246" height="229" alt="An intimate garden venue with tables and warm string lights"><a id="directions" class="button light" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&query=Golden+Oak+Gardens+Santa+Barbara">Get directions ↗</a></div></div>
+  <div class="timeline reveal"><h3>THE CELEBRATION TIMELINE</h3><ol><li><time>3:30 <small>PM</small></time><div><h4>Guest arrival</h4><p>Come a little early. Settle in, say hello.</p></div></li><li><time>4:00 <small>PM</small></time><div><h4>Wedding ceremony</h4><p>The moment we begin our forever.</p></div></li><li><time>5:00 <small>PM</small></time><div><h4>Garden cocktails</h4><p>A toast to love, laughter, and good company.</p></div></li><li><time>6:00 <small>PM</small></time><div><h4>Dinner & toasts</h4><p>Share a meal and a few happy tears.</p></div></li><li><time>7:30 <small>PM</small></time><div><h4>First dance</h4><p>Then the dance floor is yours.</p></div></li></ol><p class="fine-print">All times are local to Santa Barbara.</p></div>
+ </div>
+</section>
+
+<section class="gallery section" id="gallery" aria-labelledby="gallery-title"><div class="section-heading reveal"><p class="eyebrow">03 / Moments to keep</p><h2 id="gallery-title">THE LITTLE THINGS.<br><em>The everything.</em></h2><p>A few frames from a love we'll keep choosing.</p></div><div class="gallery-grid"><button class="gallery-item reveal" data-image="assets/couple.webp" data-caption="A little closer, always." aria-label="View garden portrait"><img src="assets/couple.webp" alt="Couple together in a garden" loading="lazy" width="139" height="215"><span>01 / Together <b aria-hidden="true">↗</b></span></button><button class="gallery-item reveal" data-image="assets/landscape.webp" data-caption="With you, wherever we go." aria-label="View mountain portrait"><img src="assets/landscape.webp" alt="Newlyweds embracing above a mountain lake" loading="lazy" width="138" height="188"><span>02 / Everywhere <b aria-hidden="true">↗</b></span></button><button class="gallery-item reveal" data-image="assets/party.webp" data-caption="Surrounded by our favourite people." aria-label="View wedding party"><img src="assets/party.webp" alt="The couple surrounded by their wedding party" loading="lazy" width="249" height="167"><span>03 / Our people <b aria-hidden="true">↗</b></span></button></div></section>
+<section class="rsvp section" id="rsvp" aria-labelledby="rsvp-title"><div class="rsvp-intro reveal"><p class="eyebrow">04 / We saved you a seat</p><p>Your presence would mean the world to us<br>as we begin this new chapter together.</p><p class="rsvp-deadline">Please reply by <span id="deadline">May 1, 2027</span>.</p><img src="assets/botanical.webp" class="botanical" alt="" loading="lazy" width="249" height="78"></div><form id="rsvp-form" class="response-card reveal"><h3>Wedding Response Card</h3><label for="name">Full name <span aria-hidden="true">*</span></label><input id="name" name="name" autocomplete="name" required maxlength="100" placeholder="Your full name"><label for="whatsapp">WhatsApp number <span aria-hidden="true">*</span></label><input id="whatsapp" name="whatsapp" type="tel" inputmode="tel" autocomplete="tel" required maxlength="25" pattern="\+?[0-9][0-9\s().-]{6,22}" title="Enter a valid number with country code, such as +91 98765 43210" placeholder="+91 98765 43210"><fieldset><legend>Will you be joining us? <span aria-hidden="true">*</span></legend><label class="choice"><input type="radio" name="attendance" value="yes" required><span>Accepts with pleasure</span></label><label class="choice"><input type="radio" name="attendance" value="no"><span>Declines with regret</span></label></fieldset><div id="guest-fields"><div class="form-row"><div><label for="guests">Total guests, including you</label><input id="guests" name="guests" type="number" min="1" max="6" step="1" value="1" required inputmode="numeric"></div><div><label for="meal">Meal preference</label><select id="meal" name="meal"><option>Non-veg</option><option>Veg</option></select></div></div><label for="notes">Dietary needs or a little note</label><textarea id="notes" name="notes" rows="3" maxlength="1000" placeholder="Please list dietary needs for each guest…"></textarea></div><div class="honey" aria-hidden="true"><label for="website">Leave this empty</label><input id="website" name="website" tabindex="-1" autocomplete="off"></div><button class="button submit" type="submit">Send our response <span aria-hidden="true">↗</span></button><p class="form-status" id="form-status" role="status" aria-live="polite"></p><p class="fine-print">Your details will only be used to organise the celebration.</p></form></section>
+<section class="closing section" aria-labelledby="closing-title"><img class="closing-image" src="assets/landscape.webp" loading="lazy" alt="The couple overlooking a peaceful mountain lake" width="138" height="188"><div class="closing-copy reveal"><img class="botanical" src="assets/botanical.webp" loading="lazy" width="249" height="78" alt=""><h2 class="script" id="closing-title">Thank You</h2><p>With love and gratitude,<br>we look forward to celebrating this moment together.</p><p class="script closing-names" data-names>James & Claire</p><p class="eyebrow" data-date>May 21, 2027</p></div></section>
+</main><footer><a class="monogram" href="#home" aria-label="Back to top">J<span>&</span>C</a><p>WITH LOVE, ALWAYS.</p><a href="#home">Back to top ↑</a></footer>
+<dialog id="lightbox" aria-label="Wedding photograph"><button class="lightbox-close" aria-label="Close photograph">×</button><button class="lightbox-prev" aria-label="Previous photograph">←</button><figure><img id="lightbox-image" alt=""><figcaption id="lightbox-caption"></figcaption></figure><button class="lightbox-next" aria-label="Next photograph">→</button></dialog>
+</body></html>
