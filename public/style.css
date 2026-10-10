@@ -3,3 +3,121 @@
 @media(max-width:1000px){.section{padding-left:38px;padding-right:38px}.hero{gap:20px}.hero h1{font-size:40px}.story,.celebration-grid,.rsvp{gap:50px}.story-photo img{height:470px}.gallery-item img{height:300px}.attire{gap:35px}.closing{gap:35px}.closing-copy h2{font-size:85px}.timeline li{grid-template-columns:75px 1fr}.timeline li:after{left:73px}.timeline li:not(:last-child):before{left:75px}.timeline p{font-size:15px}}
 @media(max-width:700px){html{scroll-padding-top:68px}body{font-size:18px}.header{height:68px;padding:0 23px}.desktop-nav,.nav-rsvp{display:none}.menu-toggle{display:block}.section{padding:72px 25px}.hero{display:flex;flex-direction:column;padding-top:30px;padding-bottom:72px;min-height:0;gap:15px}.hero-copy{width:100%;padding:0}.hero .botanical{width:205px;margin-bottom:22px}.hero .eyebrow{font-size:8px;letter-spacing:2px}.hero h1{font-size:clamp(32px,9vw,53px);letter-spacing:-1.2px}.names{font-size:65px;margin:10px 0 20px}.hero .button{margin-top:12px;padding:10px 27px;font-size:16px}.hero-note{display:none}.hero-visual{max-width:340px;margin-top:15px}.invited{font-size:32px;margin-bottom:-27px}.hero-photo{height:410px}.photo-caption{font-size:7px;margin-top:18px;letter-spacing:2.2px}.scroll-cue{font-size:8px;bottom:15px}.scroll-cue span{font-size:18px;margin-top:0}.countdown-section{padding-top:43px;padding-bottom:43px}.countdown-section .eyebrow{font-size:8px;letter-spacing:1.8px}.countdown{gap:10px}.countdown strong{font-size:38px}.countdown div{min-width:49px}.countdown span{font-size:7px;letter-spacing:1px}.countdown i{font-size:25px}.story{display:flex;flex-direction:column-reverse;gap:25px;text-align:center}.story-copy>p:not(.eyebrow):not(.signature){font-size:19px}.small-rule{margin:25px auto}.story-photo{max-width:330px}.story-photo img{height:470px}.image-note{font-size:30px;white-space:normal;bottom:5px}h2{font-size:32px;letter-spacing:-.7px}.section-heading{margin-bottom:45px}.celebration-grid{display:block}.venue-card{max-width:410px;margin:auto}.venue-card h3{font-size:45px}.venue-photo img{height:310px}.timeline{padding:60px 12px 0;max-width:420px;margin:auto}.timeline h3{text-align:center;font-size:21px}.timeline li{grid-template-columns:80px 1fr;gap:25px}.timeline li:after{left:78px}.timeline li:not(:last-child):before{left:80px}.timeline p{font-size:16px}.attire{display:block;text-align:center;margin-top:0}.attire-options{max-width:360px;margin:35px auto 0;gap:25px}.attire-options img{height:160px}.gallery-grid{grid-template-columns:1fr 1fr;gap:20px}.gallery-item img{height:230px}.gallery-item:nth-child(2){margin-top:45px}.gallery-item:nth-child(3){grid-column:1/-1;width:80%;margin:15px auto 0}.gallery-item:nth-child(3) img{height:250px}.gallery-item span{font-size:8px;letter-spacing:.7px}.rsvp{display:block;padding-left:20px;padding-right:20px}.rsvp-intro .botanical{width:180px;margin-top:20px;margin-bottom:35px}.response-card{padding:25px 20px;max-width:430px;margin:auto}.response-card h3{font-size:27px}.form-row{gap:10px}.response-card label{font-size:14px}.closing{display:flex;flex-direction:column;padding-top:0;gap:0}.closing-image{max-width:400px;height:400px}.closing-copy{margin-top:-20px;position:relative}.closing-copy .botanical{width:180px;margin-bottom:15px}.closing-copy h2{font-size:92px}.closing-copy>p{font-size:17px}footer{margin:0 23px;gap:12px;font-size:7px}footer .monogram{font-size:26px}#lightbox{padding:65px 45px}#lightbox button{width:38px;height:38px;font-size:24px}.lightbox-prev{left:5px}.lightbox-next{right:5px}#lightbox-image{max-width:78vw;min-height:0;max-height:70dvh}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}.motion .reveal{opacity:1;transform:none}.button:hover,.gallery-item:hover img{transform:none}}
+
+
+
+
+/* Smooth, elegant wedding entrance */
+
+.hero .botanical {
+  opacity: 0;
+  animation: flowerReveal 1.8s cubic-bezier(0.16, 1, 0.3, 1) 0.15s both;
+}
+
+.hero .eyebrow {
+  opacity: 0;
+  animation: headingReveal 1.4s cubic-bezier(0.16, 1, 0.3, 1) 0.55s both;
+}
+
+.hero h1 {
+  opacity: 0;
+  animation: headingReveal 1.5s cubic-bezier(0.16, 1, 0.3, 1) 0.7s both;
+}
+
+.hero .names {
+  opacity: 0;
+  animation: namesReveal 1.8s cubic-bezier(0.16, 1, 0.3, 1) 1.0s both;
+}
+
+.hero .date-line,
+.hero .location,
+.hero-copy > .button {
+  opacity: 0;
+  animation: detailsReveal 1.25s cubic-bezier(0.16, 1, 0.3, 1) 1.5s both;
+}
+
+.hero .location {
+  animation-delay: 1.6s;
+}
+
+.hero-copy > .button {
+  animation-delay: 1.7s;
+}
+
+.hero .invited {
+  opacity: 0;
+  animation: photoTextReveal 1.4s cubic-bezier(0.16, 1, 0.3, 1) 1.9s both;
+}
+
+.hero .hero-photo {
+  opacity: 0;
+  animation: photoRiseReveal 1.8s cubic-bezier(0.16, 1, 0.3, 1) 2.0s both;
+}
+
+/* Gentle movement with a long, smooth finish */
+
+@keyframes flowerReveal {
+  from {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes headingReveal {
+  from {
+    opacity: 0;
+    transform: translateX(-16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes namesReveal {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes detailsReveal {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes photoTextReveal {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes photoRiseReveal {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
